@@ -16,7 +16,7 @@ class SafetyNode(Node):
             AckermannDriveStamped, '/drive', 10)
 
         self.odom_subscription = self.create_subscription(
-            Odometry, '/ego_racecar/odom', self.odom_callback, 10)
+            Odometry, '/ego_racecar/odom', self.odom_callback, 10) # Receive current speed of the vehicle
 
         self.laser_scan_subscription = self.create_subscription(
             LaserScan, '/scan', self.scan_callback, 10)
@@ -31,18 +31,18 @@ class SafetyNode(Node):
 
     def odom_callback(self, odom_msg):
         self.current_speed = odom_msg.twist.twist.linear.x
-        self.get_logger().info(f'Current speed updated: {self.current_speed}')
+        # self.get_logger().info(f'Current speed updated: {self.current_speed}')
 
     def scan_callback(self, scan_msg):
-        self.get_logger().info('Received laser scan message')
+        # self.get_logger().info('Received laser scan message')
         ranges = scan_msg.ranges
         inst_ttc = self.calculate_ittc(ranges, self.current_speed)
 
-        self.get_logger().info(f'Instantaneous TTC values: {inst_ttc}')
+        # self.get_logger().info(f'Instantaneous TTC values: {inst_ttc}')
 
         for ittc in inst_ttc:
             if np.isinf(ittc) or ittc < self.threshold:
-                self.get_logger().info(f'TTC below threshold: {ittc}')
+                # self.get_logger().info(f'TTC below threshold: {ittc}')
                 self.publish_brake_command()
                 break
 
