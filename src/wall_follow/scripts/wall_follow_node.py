@@ -21,12 +21,12 @@ class WallFollow(Node):
         self.laser_sub = self.create_subscription(LaserScan, lidarscan_topic, self.scan_callback, 10)
         self.drive_pub = self.create_publisher(AckermannDriveStamped, drive_topic, 10)
 
-        # Need to be tuned
+        # PID control parameters
         self.kp = 12.0
         self.kd = 0.7
-        self.ki = 0.5 
+        self.ki = 6.0
 
-        self.dist_from_wall = 0.0  # More reasonable initial distance
+        self.dist_from_wall = 0.5  # Desired distance from the wall
         self.integral = 0.0
         self.prev_error = 0.0
         self.previous_time = time.time()
@@ -43,7 +43,6 @@ class WallFollow(Node):
 
         Returns:
             range: range measurement in meters at the given angle
-
         """
         # Convert angle to index
         angle_rad = np.radians(angle)
@@ -70,14 +69,12 @@ class WallFollow(Node):
         Returns:
             error: calculated error
         """
-
         angle_left = 90  # Angle for left wall
-        angle_right = -90  # Angle for right wall
+        angle_right = -45  # Angle for right wall
 
         dist_left = self.get_range(range_data, angle_left)
         dist_right = self.get_range(range_data, angle_right)
 
-        # Use the smaller distance to decide the error
         if dist_left < dist_right:
             error = dist - dist_left
         else:
@@ -85,7 +82,7 @@ class WallFollow(Node):
         
         return error
 
-    def pid_control(self, error, velocity):
+    def pid_control(self, error): # I removed velocity
         """
         Based on the calculated error, publish vehicle control
 
@@ -110,7 +107,7 @@ class WallFollow(Node):
         steering_angle = control_output
         
         # Set speed based on steering angle
-        speed = 2.0 if abs(steering_angle) < 0.1 else 1.0
+        speed = 2.0 if abs(steering_angle) < 0.5 else 1.0
         
         # Publish drive message
         drive_msg = AckermannDriveStamped()
@@ -118,6 +115,21 @@ class WallFollow(Node):
         drive_msg.drive.speed = speed
         self.drive_pub.publish(drive_msg)
 
+    def check_for_opening(self, range_data):
+        """
+        Check for an opening to the left of the car.
+        
+        Args:
+            range_data: single range array from the LiDAR
+
+        Returns:
+            is_opening: True if there is an opening to the left, False otherwise
+        """
+        left_opening_angle = 75  # Angle to check for left opening
+        opening_distance_threshold = 1.3  # Distance threshold to consider as an opening
+
+        dist_left = self.get_range(range_data, left_opening_angle)
+        return dist_left > opening_distance_threshold
 
     def scan_callback(self, msg):
         """
@@ -129,14 +141,20 @@ class WallFollow(Node):
         Returns:
             None
         """
-        # Check if 5 seconds have passed
-        
-        # Calculate the error and control the car
-        error = self.get_error(msg, self.dist_from_wall)
-        velocity = 1.5  # Constant velocity for now
-        self.pid_control(error, velocity)
+        drive_msg = AckermannDriveStamped()
+        if self.check_for_opening(msg):
+            # If there is an opening to the left, turn left
+            drive_msg.drive.steering_angle = 1.0  # Turn left
+            drive_msg.drive.speed = 0.5  # Slow down while turning
+            self.drive_pub.publish(drive_msg)
+        else:
+            # Calculate the error and control the car
+            # drive_msg = AckermannDriveStamped()
+            drive_msg.drive.speed = 1.5 
+            self.drive_pub.publish(drive_msg)
 
-
+            error = self.get_error(msg, self.dist_from_wall)
+            self.pid_control(error)
 
 def main(args=None):
     rclpy.init(args=args)
@@ -148,7 +166,6 @@ def main(args=None):
     # when the garbage collector destroys the node object)
     wall_follow_node.destroy_node()
     rclpy.shutdown()
-
 
 if __name__ == '__main__':
     main()
