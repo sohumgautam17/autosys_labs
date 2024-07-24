@@ -26,7 +26,7 @@ class WallFollow(Node):
         self.kd = 0.7
         self.ki = 6.0
 
-        self.dist_from_wall = 0.5  # Desired distance from the wall
+        self.dist_from_wall = 0.1  # Desired distance from the wall
         self.integral = 0.0
         self.prev_error = 0.0
         self.previous_time = time.time()
@@ -107,13 +107,13 @@ class WallFollow(Node):
         steering_angle = control_output
         
         # Set speed based on steering angle
-        speed = 2.0 if abs(steering_angle) < 0.5 else 1.0
+        # speed = 2.0 if abs(steering_angle) < 0.5 else 1.0
         
-        # Publish drive message
-        drive_msg = AckermannDriveStamped()
-        drive_msg.drive.steering_angle = steering_angle
-        drive_msg.drive.speed = speed
-        self.drive_pub.publish(drive_msg)
+        # # Publish drive message
+        # drive_msg = AckermannDriveStamped()
+        # drive_msg.drive.steering_angle = steering_angle
+        # drive_msg.drive.speed = speed
+        # self.drive_pub.publish(drive_msg)
 
     def check_for_opening(self, range_data):
         """
@@ -130,6 +130,7 @@ class WallFollow(Node):
 
         dist_left = self.get_range(range_data, left_opening_angle)
         return dist_left > opening_distance_threshold
+    
 
     def scan_callback(self, msg):
         """
@@ -150,11 +151,13 @@ class WallFollow(Node):
         else:
             # Calculate the error and control the car
             # drive_msg = AckermannDriveStamped()
-            drive_msg.drive.speed = 1.5 
+            drive_msg.drive.speed = 1.5
+            # self.get_logger().info(f"Speed of car is {drive_msg.drive.speed}")
             self.drive_pub.publish(drive_msg)
 
             error = self.get_error(msg, self.dist_from_wall)
             self.pid_control(error)
+        
 
 def main(args=None):
     rclpy.init(args=args)
