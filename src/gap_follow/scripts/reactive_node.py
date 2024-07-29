@@ -24,22 +24,9 @@ class ReactiveFollowGap(Node):
         # TODO: Publish to drive
         self.driver_pub = self.create_publisher(AckermannDriveStamped, drive_topic, 10)
 
-    # def preprocess_lidar(self, ranges):
-    #     """ Preprocess the LiDAR scan array. Expert implementation includes:
-    #         1.Setting each value to the mean over some window
-    #         2.Rejecting high values (eg. > 3m)
-    #     """
-    #     ranges = list(ranges.ranges)
-    #     threshold = 2.5
-
-    #     ranges = [0.0 for r in ranges if r < threshold]
-
-    #     proc_ranges = ranges
-    #     return proc_ranges
-
     def find_max_gap(self, free_space_ranges):
         """ Return the start index & end index of the max gap in free_space_ranges """
-        safe_thresh = 3  # This is how far the obstacle can be for it to be safe
+        safe_thresh = 2.0  # This is how far the obstacle can be for it to be safe
         start_indx = None
         counter = 0
         gaps = {}
@@ -93,14 +80,6 @@ class ReactiveFollowGap(Node):
         ranges = np.array(data.ranges)
         # proc_ranges = self.preprocess_lidar(ranges)
 
-        # # Find closest point to LiDAR
-        # closest_point = np.argmin(proc_ranges)
-        # # Eliminate all points inside 'bubble' (set them to zero)
-        # bubble_radius = 5  # This should be determined based on the safety radius
-        # start_bubble = max(0, closest_point - bubble_radius)
-        # end_bubble = min(len(proc_ranges) - 1, closest_point + bubble_radius)
-        # proc_ranges[start_bubble:end_bubble] = 0
-
         # Find max length gap
         start_i, end_i = self.find_max_gap(ranges)
 
@@ -109,8 +88,8 @@ class ReactiveFollowGap(Node):
 
         # Publish Drive message
         drive_msg = AckermannDriveStamped()
-        drive_msg.drive.steering_angle = (best_point - len(ranges) // 2) * data.angle_increment
-        drive_msg.drive.speed = 1.0  # You can adjust the speed accordingly
+        drive_msg.drive.steering_angle = (best_point - len(ranges) // 2.0) * data.angle_increment
+        drive_msg.drive.speed = 5.0  # You can adjust the speed accordingly
 
         self.driver_pub.publish(drive_msg)
 

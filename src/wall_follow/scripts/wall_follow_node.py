@@ -17,7 +17,7 @@ class WallFollow(Node):
         self.kp = self.declare_parameter('kp', 1.0).get_parameter_value().double_value
         self.ki = self.declare_parameter('ki', 0.001).get_parameter_value().double_value
         self.kd = self.declare_parameter('kd', 0.005).get_parameter_value().double_value
-        self.desired_distance = self.declare_parameter('desired_distance', 1.0).get_parameter_value().double_value
+        self.desired_distance = self.declare_parameter('desired_distance', 0.94).get_parameter_value().double_value
         self.lookahead_distance = self.declare_parameter('lookahead_distance', 1.0).get_parameter_value().double_value
 
         lidarscan_topic = '/scan'
