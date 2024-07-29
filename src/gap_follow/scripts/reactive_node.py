@@ -89,14 +89,14 @@ class ReactiveFollowGap(Node):
         # Publish Drive message
         drive_msg = AckermannDriveStamped()
         drive_msg.drive.steering_angle = (best_point - len(ranges) // 2.0) * data.angle_increment
-        drive_msg.drive.speed = 5.0  # You can adjust the speed accordingly
+        drive_msg.drive.speed = 2.5  # You can adjust the speed accordingly
 
         self.driver_pub.publish(drive_msg)
 
 
 def main(args=None):
     rclpy.init(args=args)
-    print("WallFollow Initialized")
+    print("Gap Follow Initialized")
     reactive_node = ReactiveFollowGap()
     rclpy.spin(reactive_node)
 
