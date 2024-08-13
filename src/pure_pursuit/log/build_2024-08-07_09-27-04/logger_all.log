@@ -1,0 +1,113 @@
+[0.313s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.313s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=7, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xf5ed79199ff0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xf5ed79199b10>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xf5ed79199b10>>, mixin_verb=('build',))
+[0.592s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.592s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.592s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.592s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.592s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.592s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.592s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit'
+[0.592s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.610s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'pure_pursuit'
+[0.610s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.610s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.610s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.610s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.610s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.638s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.638s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.642s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 295 installed packages in /opt/ros/iron
+[0.651s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.692s] Level 5:colcon.colcon_core.verb:set package 'pure_pursuit' build argument 'cmake_args' from command line to 'None'
+[0.692s] Level 5:colcon.colcon_core.verb:set package 'pure_pursuit' build argument 'cmake_target' from command line to 'None'
+[0.692s] Level 5:colcon.colcon_core.verb:set package 'pure_pursuit' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.692s] Level 5:colcon.colcon_core.verb:set package 'pure_pursuit' build argument 'cmake_clean_cache' from command line to 'False'
+[0.692s] Level 5:colcon.colcon_core.verb:set package 'pure_pursuit' build argument 'cmake_clean_first' from command line to 'False'
+[0.692s] Level 5:colcon.colcon_core.verb:set package 'pure_pursuit' build argument 'cmake_force_configure' from command line to 'False'
+[0.692s] Level 5:colcon.colcon_core.verb:set package 'pure_pursuit' build argument 'ament_cmake_args' from command line to 'None'
+[0.692s] Level 5:colcon.colcon_core.verb:set package 'pure_pursuit' build argument 'catkin_cmake_args' from command line to 'None'
+[0.692s] Level 5:colcon.colcon_core.verb:set package 'pure_pursuit' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.692s] DEBUG:colcon.colcon_core.verb:Building package 'pure_pursuit' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/build/pure_pursuit', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit', 'merge_install': False, 'path': '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit', 'symlink_install': False, 'test_result_base': None}
+[0.692s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.693s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.693s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit' with build type 'ament_cmake'
+[0.693s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit'
+[0.699s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.699s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.699s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.705s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/build/pure_pursuit': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit -DCMAKE_INSTALL_PREFIX=/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit
+[3.991s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/build/pure_pursuit' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit -DCMAKE_INSTALL_PREFIX=/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit
+[3.993s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/build/pure_pursuit': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/build/pure_pursuit -- -j7 -l7
+[7.964s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/build/pure_pursuit' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/build/pure_pursuit -- -j7 -l7
+[7.993s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/build/pure_pursuit': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/build/pure_pursuit
+[8.043s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pure_pursuit)
+[8.044s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/build/pure_pursuit' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/build/pure_pursuit
+[8.052s] Level 1:colcon.colcon_core.environment:checking '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit' for CMake module files
+[8.053s] Level 1:colcon.colcon_core.environment:checking '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit' for CMake config files
+[8.053s] Level 1:colcon.colcon_core.shell:create_environment_hook('pure_pursuit', 'cmake_prefix_path')
+[8.053s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/hook/cmake_prefix_path.ps1'
+[8.054s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/hook/cmake_prefix_path.dsv'
+[8.055s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/hook/cmake_prefix_path.sh'
+[8.056s] Level 1:colcon.colcon_core.environment:checking '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/lib'
+[8.056s] Level 1:colcon.colcon_core.environment:checking '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/bin'
+[8.056s] Level 1:colcon.colcon_core.environment:checking '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/lib/pkgconfig/pure_pursuit.pc'
+[8.056s] Level 1:colcon.colcon_core.environment:checking '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/lib/python3.10/site-packages'
+[8.056s] Level 1:colcon.colcon_core.shell:create_environment_hook('pure_pursuit', 'pythonpath')
+[8.057s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/hook/pythonpath.ps1'
+[8.057s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/hook/pythonpath.dsv'
+[8.057s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/hook/pythonpath.sh'
+[8.058s] Level 1:colcon.colcon_core.environment:checking '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/bin'
+[8.059s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/package.ps1'
+[8.060s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/package.dsv'
+[8.061s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/package.sh'
+[8.062s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/package.bash'
+[8.063s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/package.zsh'
+[8.064s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/colcon-core/packages/pure_pursuit)
+[8.086s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pure_pursuit)
+[8.086s] Level 1:colcon.colcon_core.environment:checking '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit' for CMake module files
+[8.087s] Level 1:colcon.colcon_core.environment:checking '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit' for CMake config files
+[8.087s] Level 1:colcon.colcon_core.shell:create_environment_hook('pure_pursuit', 'cmake_prefix_path')
+[8.087s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/hook/cmake_prefix_path.ps1'
+[8.088s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/hook/cmake_prefix_path.dsv'
+[8.088s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/hook/cmake_prefix_path.sh'
+[8.088s] Level 1:colcon.colcon_core.environment:checking '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/lib'
+[8.088s] Level 1:colcon.colcon_core.environment:checking '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/bin'
+[8.088s] Level 1:colcon.colcon_core.environment:checking '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/lib/pkgconfig/pure_pursuit.pc'
+[8.089s] Level 1:colcon.colcon_core.environment:checking '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/lib/python3.10/site-packages'
+[8.089s] Level 1:colcon.colcon_core.shell:create_environment_hook('pure_pursuit', 'pythonpath')
+[8.089s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/hook/pythonpath.ps1'
+[8.089s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/hook/pythonpath.dsv'
+[8.089s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/hook/pythonpath.sh'
+[8.090s] Level 1:colcon.colcon_core.environment:checking '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/bin'
+[8.090s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/package.ps1'
+[8.091s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/package.dsv'
+[8.091s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/package.sh'
+[8.092s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/package.bash'
+[8.092s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/package.zsh'
+[8.092s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/colcon-core/packages/pure_pursuit)
+[8.092s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[8.093s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[8.093s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[8.093s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[8.100s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[8.101s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[8.101s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[8.130s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[8.130s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/local_setup.ps1'
+[8.132s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/_local_setup_util_ps1.py'
+[8.133s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/setup.ps1'
+[8.145s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/local_setup.sh'
+[8.146s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/_local_setup_util_sh.py'
+[8.147s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/setup.sh'
+[8.149s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/local_setup.bash'
+[8.151s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/setup.bash'
+[8.153s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/local_setup.zsh'
+[8.160s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/setup.zsh'
