@@ -1,0 +1,116 @@
+[0.011s] Invoking command in '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/build/pure_pursuit': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit -DCMAKE_INSTALL_PREFIX=/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit
+[0.234s] -- The C compiler identification is GNU 11.4.0
+[0.376s] -- The CXX compiler identification is GNU 11.4.0
+[0.390s] -- Detecting C compiler ABI info
+[0.472s] -- Detecting C compiler ABI info - done
+[0.480s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.481s] -- Detecting C compile features
+[0.482s] -- Detecting C compile features - done
+[0.486s] -- Detecting CXX compiler ABI info
+[0.563s] -- Detecting CXX compiler ABI info - done
+[0.572s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.572s] -- Detecting CXX compile features
+[0.573s] -- Detecting CXX compile features - done
+[0.585s] -- Found ament_cmake: 2.0.5 (/opt/ros/iron/share/ament_cmake/cmake)
+[0.743s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.846s] -- Found rclcpp: 21.0.6 (/opt/ros/iron/share/rclcpp/cmake)
+[0.918s] -- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+[0.938s] -- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+[0.971s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.998s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.238s] -- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)
+[1.242s] -- Found rmw_fastrtps_cpp: 7.1.3 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)
+[1.369s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.399s] -- Found FastRTPS: /opt/ros/iron/include  
+[1.444s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.691s] -- Found rclpy: 4.1.5 (/opt/ros/iron/share/rclpy/cmake)
+[1.693s] -- Found geometry_msgs: 5.0.1 (/opt/ros/iron/share/geometry_msgs/cmake)
+[1.841s] -- Found nav_msgs: 5.0.1 (/opt/ros/iron/share/nav_msgs/cmake)
+[2.008s] -- Found ackermann_msgs: 2.0.2 (/opt/ros/iron/share/ackermann_msgs/cmake)
+[2.065s] -- Found sensor_msgs: 5.0.1 (/opt/ros/iron/share/sensor_msgs/cmake)
+[2.223s] -- Found visualization_msgs: 5.0.1 (/opt/ros/iron/share/visualization_msgs/cmake)
+[2.454s] -- Found tf2_ros: 0.31.7 (/opt/ros/iron/share/tf2_ros/cmake)
+[3.162s] -- Found ament_lint_auto: 0.14.3 (/opt/ros/iron/share/ament_lint_auto/cmake)
+[3.250s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.253s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.254s] -- Configured cppcheck include dirs: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/include
+[3.254s] -- Configured cppcheck exclude dirs and/or files: 
+[3.257s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[3.257s] -- Configured cpplint exclude dirs and/or files: 
+[3.258s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.258s] -- Configured 'flake8' exclude dirs and/or files: 
+[3.259s] -- Added test 'lint_cmake' to check CMake code style
+[3.260s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.264s] -- Added test 'uncrustify' to check C / C++ code style
+[3.264s] -- Configured uncrustify additional arguments: 
+[3.265s] -- Added test 'xmllint' to check XML markup files
+[3.267s] -- Configuring done
+[3.286s] -- Generating done
+[3.289s] -- Build files have been written to: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/build/pure_pursuit
+[3.297s] Invoked command in '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/build/pure_pursuit' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit -DCMAKE_INSTALL_PREFIX=/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit
+[3.299s] Invoking command in '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/build/pure_pursuit': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/build/pure_pursuit -- -j7 -l7
+[3.345s] [ 50%] [32mBuilding CXX object CMakeFiles/pure_pursuit_node.dir/src/pure_pursuit_node.cpp.o[0m
+[3.352s] [ 50%] Built target ament_cmake_python_copy_pure_pursuit
+[3.352s] [ 50%] Built target ament_cmake_python_copy_pure_pursuit_setup
+[3.546s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[3.546s]   warnings.warn(
+[3.546s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[3.546s]   warnings.warn(
+[3.554s] running egg_info
+[3.554s] creating pure_pursuit.egg-info
+[3.554s] writing pure_pursuit.egg-info/PKG-INFO
+[3.554s] writing dependency_links to pure_pursuit.egg-info/dependency_links.txt
+[3.555s] writing top-level names to pure_pursuit.egg-info/top_level.txt
+[3.555s] writing manifest file 'pure_pursuit.egg-info/SOURCES.txt'
+[3.558s] reading manifest file 'pure_pursuit.egg-info/SOURCES.txt'
+[3.558s] writing manifest file 'pure_pursuit.egg-info/SOURCES.txt'
+[3.580s] [ 50%] Built target ament_cmake_python_build_pure_pursuit_egg
+[6.163s] [01m[K/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/src/pure_pursuit_node.cpp:32:81:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgeometry_msgs::msg::PoseStamped_<std::allocator<void> >::ConstPtr[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[6.164s]    32 | ose_callback(const geometry_msgs::msg::PoseStamped::ConstPtr &pose_msg[01;35m[K)[m[K
+[6.164s]       |                                                                       [01;35m[K^[m[K
+[6.164s] 
+[6.164s] In file included from [01m[K/opt/ros/iron/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp:7[m[K,
+[6.164s]                  from [01m[K/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/src/pure_pursuit_node.cpp:10[m[K:
+[6.164s] [01m[K/opt/ros/iron/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp:115:5:[m[K [01;36m[Knote: [m[Kdeclared here
+[6.164s]   115 |     [01;36m[KConstPtr[m[K;
+[6.164s]       |     [01;36m[K^~~~~~~~[m[K
+[6.164s] [01m[K/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/src/pure_pursuit_node.cpp:[m[K In member function ‘[01m[Kvoid PurePursuit::pose_callback(const ConstPtr&)[m[K’:
+[6.164s] [01m[K/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/src/pure_pursuit_node.cpp:32:73:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpose_msg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.164s]    32 | ose_callback([01;35m[Kconst geometry_msgs::msg::PoseStamped::ConstPtr &pose_msg[m[K)
+[6.164s]       |              [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[6.164s] 
+[6.999s] [100%] [32m[1mLinking CXX executable pure_pursuit_node[0m
+[7.260s] [100%] Built target pure_pursuit_node
+[7.270s] Invoked command in '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/build/pure_pursuit' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/build/pure_pursuit -- -j7 -l7
+[7.299s] Invoking command in '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/build/pure_pursuit': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/build/pure_pursuit
+[7.305s] -- Install configuration: ""
+[7.305s] -- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/lib/pure_pursuit/pure_pursuit_node
+[7.306s] -- Set runtime path of "/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/lib/pure_pursuit/pure_pursuit_node" to ""
+[7.306s] -- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/environment/pythonpath.sh
+[7.306s] -- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/environment/pythonpath.dsv
+[7.307s] -- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/lib/python3.10/site-packages/pure_pursuit-0.0.0-py3.10.egg-info
+[7.307s] -- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/lib/python3.10/site-packages/pure_pursuit-0.0.0-py3.10.egg-info/PKG-INFO
+[7.307s] -- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/lib/python3.10/site-packages/pure_pursuit-0.0.0-py3.10.egg-info/SOURCES.txt
+[7.307s] -- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/lib/python3.10/site-packages/pure_pursuit-0.0.0-py3.10.egg-info/dependency_links.txt
+[7.307s] -- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/lib/python3.10/site-packages/pure_pursuit-0.0.0-py3.10.egg-info/top_level.txt
+[7.307s] -- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/lib/python3.10/site-packages/pure_pursuit
+[7.307s] -- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/lib/python3.10/site-packages/pure_pursuit/__init__.py
+[7.340s] Listing '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/lib/python3.10/site-packages/pure_pursuit'...
+[7.340s] Compiling '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/lib/python3.10/site-packages/pure_pursuit/__init__.py'...
+[7.345s] -- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/lib/pure_pursuit/pure_pursuit_node.py
+[7.345s] -- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/ament_index/resource_index/package_run_dependencies/pure_pursuit
+[7.346s] -- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/ament_index/resource_index/parent_prefix_path/pure_pursuit
+[7.346s] -- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/environment/ament_prefix_path.sh
+[7.346s] -- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/environment/ament_prefix_path.dsv
+[7.346s] -- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/environment/path.sh
+[7.346s] -- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/environment/path.dsv
+[7.346s] -- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/local_setup.bash
+[7.346s] -- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/local_setup.sh
+[7.346s] -- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/local_setup.zsh
+[7.346s] -- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/local_setup.dsv
+[7.346s] -- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/package.dsv
+[7.347s] -- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/ament_index/resource_index/packages/pure_pursuit
+[7.347s] -- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/cmake/pure_pursuitConfig.cmake
+[7.347s] -- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/cmake/pure_pursuitConfig-version.cmake
+[7.347s] -- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/package.xml
+[7.350s] Invoked command in '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/build/pure_pursuit' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/build/pure_pursuit

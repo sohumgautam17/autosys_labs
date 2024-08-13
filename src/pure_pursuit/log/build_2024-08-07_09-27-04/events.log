@@ -1,0 +1,196 @@
+[0.000000] (-) TimerEvent: {}
+[0.000122] (pure_pursuit) JobQueued: {'identifier': 'pure_pursuit', 'dependencies': OrderedDict()}
+[0.000156] (pure_pursuit) JobStarted: {'identifier': 'pure_pursuit'}
+[0.010672] (pure_pursuit) JobProgress: {'identifier': 'pure_pursuit', 'progress': 'cmake'}
+[0.010862] (pure_pursuit) Command: {'cmd': ['/usr/bin/cmake', '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit', '-DCMAKE_INSTALL_PREFIX=/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit'], 'cwd': '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/build/pure_pursuit', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sohum'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/sohum'), ('OLDPWD', '/home/sohum/Graph_SLAM_Pure_Pursuit'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1169'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'sohum'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sohum'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/opt/ros/iron/bin:/home/sohum/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sohum-QEMU-Virtual-Machine:@/tmp/.ICE-unix/1140,unix/sohum-QEMU-Virtual-Machine:/tmp/.ICE-unix/1140'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c6526165_8735_404c_a06a_a8c01bcbdcd5'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0IEDS2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.113'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/iron'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/build/pure_pursuit'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/iron')]), 'shell': False}
+[0.102103] (-) TimerEvent: {}
+[0.204162] (-) TimerEvent: {}
+[0.233576] (pure_pursuit) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.304800] (-) TimerEvent: {}
+[0.376493] (pure_pursuit) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.390082] (pure_pursuit) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.405592] (-) TimerEvent: {}
+[0.472338] (pure_pursuit) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.480571] (pure_pursuit) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.481342] (pure_pursuit) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.482412] (pure_pursuit) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.486291] (pure_pursuit) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.506222] (-) TimerEvent: {}
+[0.563120] (pure_pursuit) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.572158] (pure_pursuit) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.572451] (pure_pursuit) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.573025] (pure_pursuit) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.584827] (pure_pursuit) StdoutLine: {'line': b'-- Found ament_cmake: 2.0.5 (/opt/ros/iron/share/ament_cmake/cmake)\n'}
+[0.608228] (-) TimerEvent: {}
+[0.708469] (-) TimerEvent: {}
+[0.742863] (pure_pursuit) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[0.808768] (-) TimerEvent: {}
+[0.846242] (pure_pursuit) StdoutLine: {'line': b'-- Found rclcpp: 21.0.6 (/opt/ros/iron/share/rclcpp/cmake)\n'}
+[0.913241] (-) TimerEvent: {}
+[0.917923] (pure_pursuit) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)\n'}
+[0.937773] (pure_pursuit) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)\n'}
+[0.971435] (pure_pursuit) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.997974] (pure_pursuit) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.013588] (-) TimerEvent: {}
+[1.118080] (-) TimerEvent: {}
+[1.218353] (-) TimerEvent: {}
+[1.238046] (pure_pursuit) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)\n'}
+[1.242102] (pure_pursuit) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 7.1.3 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.322523] (-) TimerEvent: {}
+[1.368911] (pure_pursuit) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.399499] (pure_pursuit) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/iron/include  \n'}
+[1.427300] (-) TimerEvent: {}
+[1.443870] (pure_pursuit) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.531785] (-) TimerEvent: {}
+[1.635076] (-) TimerEvent: {}
+[1.691074] (pure_pursuit) StdoutLine: {'line': b'-- Found rclpy: 4.1.5 (/opt/ros/iron/share/rclpy/cmake)\n'}
+[1.693498] (pure_pursuit) StdoutLine: {'line': b'-- Found geometry_msgs: 5.0.1 (/opt/ros/iron/share/geometry_msgs/cmake)\n'}
+[1.736783] (-) TimerEvent: {}
+[1.837148] (-) TimerEvent: {}
+[1.840736] (pure_pursuit) StdoutLine: {'line': b'-- Found nav_msgs: 5.0.1 (/opt/ros/iron/share/nav_msgs/cmake)\n'}
+[1.941348] (-) TimerEvent: {}
+[2.008154] (pure_pursuit) StdoutLine: {'line': b'-- Found ackermann_msgs: 2.0.2 (/opt/ros/iron/share/ackermann_msgs/cmake)\n'}
+[2.042033] (-) TimerEvent: {}
+[2.065294] (pure_pursuit) StdoutLine: {'line': b'-- Found sensor_msgs: 5.0.1 (/opt/ros/iron/share/sensor_msgs/cmake)\n'}
+[2.144702] (-) TimerEvent: {}
+[2.222967] (pure_pursuit) StdoutLine: {'line': b'-- Found visualization_msgs: 5.0.1 (/opt/ros/iron/share/visualization_msgs/cmake)\n'}
+[2.249359] (-) TimerEvent: {}
+[2.353642] (-) TimerEvent: {}
+[2.453806] (pure_pursuit) StdoutLine: {'line': b'-- Found tf2_ros: 0.31.7 (/opt/ros/iron/share/tf2_ros/cmake)\n'}
+[2.453948] (-) TimerEvent: {}
+[2.558404] (-) TimerEvent: {}
+[2.662931] (-) TimerEvent: {}
+[2.763228] (-) TimerEvent: {}
+[2.864765] (-) TimerEvent: {}
+[2.969702] (-) TimerEvent: {}
+[3.074297] (-) TimerEvent: {}
+[3.161642] (pure_pursuit) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.14.3 (/opt/ros/iron/share/ament_lint_auto/cmake)\n'}
+[3.175490] (-) TimerEvent: {}
+[3.249618] (pure_pursuit) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[3.253364] (pure_pursuit) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[3.253709] (pure_pursuit) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/include\n'}
+[3.253803] (pure_pursuit) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[3.257144] (pure_pursuit) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[3.257304] (pure_pursuit) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[3.258258] (pure_pursuit) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[3.258337] (pure_pursuit) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[3.259549] (pure_pursuit) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.260575] (pure_pursuit) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[3.264341] (pure_pursuit) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[3.264454] (pure_pursuit) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[3.265465] (pure_pursuit) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.267185] (pure_pursuit) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.275606] (-) TimerEvent: {}
+[3.285943] (pure_pursuit) StdoutLine: {'line': b'-- Generating done\n'}
+[3.288642] (pure_pursuit) StdoutLine: {'line': b'-- Build files have been written to: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/build/pure_pursuit\n'}
+[3.296960] (pure_pursuit) CommandEnded: {'returncode': 0}
+[3.297719] (pure_pursuit) JobProgress: {'identifier': 'pure_pursuit', 'progress': 'build'}
+[3.299049] (pure_pursuit) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/build/pure_pursuit', '--', '-j7', '-l7'], 'cwd': '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/build/pure_pursuit', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sohum'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/sohum'), ('OLDPWD', '/home/sohum/Graph_SLAM_Pure_Pursuit'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1169'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'sohum'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sohum'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/opt/ros/iron/bin:/home/sohum/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sohum-QEMU-Virtual-Machine:@/tmp/.ICE-unix/1140,unix/sohum-QEMU-Virtual-Machine:/tmp/.ICE-unix/1140'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c6526165_8735_404c_a06a_a8c01bcbdcd5'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0IEDS2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.113'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/iron'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/build/pure_pursuit'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/iron')]), 'shell': False}
+[3.344906] (pure_pursuit) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/pure_pursuit_node.dir/src/pure_pursuit_node.cpp.o\x1b[0m\n'}
+[3.351959] (pure_pursuit) StdoutLine: {'line': b'[ 50%] Built target ament_cmake_python_copy_pure_pursuit\n'}
+[3.352106] (pure_pursuit) StdoutLine: {'line': b'[ 50%] Built target ament_cmake_python_copy_pure_pursuit_setup\n'}
+[3.375741] (-) TimerEvent: {}
+[3.476031] (-) TimerEvent: {}
+[3.546105] (pure_pursuit) StderrLine: {'line': b"/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[3.546266] (pure_pursuit) StderrLine: {'line': b'  warnings.warn(\n'}
+[3.546468] (pure_pursuit) StderrLine: {'line': b"/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead\n"}
+[3.546536] (pure_pursuit) StderrLine: {'line': b'  warnings.warn(\n'}
+[3.553703] (pure_pursuit) StdoutLine: {'line': b'running egg_info\n'}
+[3.554116] (pure_pursuit) StdoutLine: {'line': b'creating pure_pursuit.egg-info\n'}
+[3.554497] (pure_pursuit) StdoutLine: {'line': b'writing pure_pursuit.egg-info/PKG-INFO\n'}
+[3.554591] (pure_pursuit) StdoutLine: {'line': b'writing dependency_links to pure_pursuit.egg-info/dependency_links.txt\n'}
+[3.554805] (pure_pursuit) StdoutLine: {'line': b'writing top-level names to pure_pursuit.egg-info/top_level.txt\n'}
+[3.554877] (pure_pursuit) StdoutLine: {'line': b"writing manifest file 'pure_pursuit.egg-info/SOURCES.txt'\n"}
+[3.557655] (pure_pursuit) StdoutLine: {'line': b"reading manifest file 'pure_pursuit.egg-info/SOURCES.txt'\n"}
+[3.558065] (pure_pursuit) StdoutLine: {'line': b"writing manifest file 'pure_pursuit.egg-info/SOURCES.txt'\n"}
+[3.576209] (-) TimerEvent: {}
+[3.579959] (pure_pursuit) StdoutLine: {'line': b'[ 50%] Built target ament_cmake_python_build_pure_pursuit_egg\n'}
+[3.677828] (-) TimerEvent: {}
+[3.782190] (-) TimerEvent: {}
+[3.885364] (-) TimerEvent: {}
+[3.990038] (-) TimerEvent: {}
+[4.093251] (-) TimerEvent: {}
+[4.194758] (-) TimerEvent: {}
+[4.299225] (-) TimerEvent: {}
+[4.403153] (-) TimerEvent: {}
+[4.506040] (-) TimerEvent: {}
+[4.610468] (-) TimerEvent: {}
+[4.714960] (-) TimerEvent: {}
+[4.816750] (-) TimerEvent: {}
+[4.921536] (-) TimerEvent: {}
+[5.026320] (-) TimerEvent: {}
+[5.131031] (-) TimerEvent: {}
+[5.231719] (-) TimerEvent: {}
+[5.336642] (-) TimerEvent: {}
+[5.441442] (-) TimerEvent: {}
+[5.542230] (-) TimerEvent: {}
+[5.646783] (-) TimerEvent: {}
+[5.749005] (-) TimerEvent: {}
+[5.852005] (-) TimerEvent: {}
+[5.956755] (-) TimerEvent: {}
+[6.061470] (-) TimerEvent: {}
+[6.162934] (-) TimerEvent: {}
+[6.163386] (pure_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/src/pure_pursuit_node.cpp:32:81:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::PoseStamped_<std::allocator<void> >::ConstPtr\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.163642] (pure_pursuit) StderrLine: {'line': b'   32 | ose_callback(const geometry_msgs::msg::PoseStamped::ConstPtr &pose_msg\x1b[01;35m\x1b[K)\x1b[m\x1b[K\n'}
+[6.163699] (pure_pursuit) StderrLine: {'line': b'      |                                                                       \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[6.163743] (pure_pursuit) StderrLine: {'line': b'\n'}
+[6.163784] (pure_pursuit) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/iron/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp:7\x1b[m\x1b[K,\n'}
+[6.163855] (pure_pursuit) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/src/pure_pursuit_node.cpp:10\x1b[m\x1b[K:\n'}
+[6.163914] (pure_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/iron/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp:115:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[6.163993] (pure_pursuit) StderrLine: {'line': b'  115 |     \x1b[01;36m\x1b[KConstPtr\x1b[m\x1b[K;\n'}
+[6.164172] (pure_pursuit) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.164236] (pure_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/src/pure_pursuit_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid PurePursuit::pose_callback(const ConstPtr&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.164282] (pure_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/src/pure_pursuit_node.cpp:32:73:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kpose_msg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.164343] (pure_pursuit) StderrLine: {'line': b'   32 | ose_callback(\x1b[01;35m\x1b[Kconst geometry_msgs::msg::PoseStamped::ConstPtr &pose_msg\x1b[m\x1b[K)\n'}
+[6.164437] (pure_pursuit) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[6.164481] (pure_pursuit) StderrLine: {'line': b'\n'}
+[6.265706] (-) TimerEvent: {}
+[6.366884] (-) TimerEvent: {}
+[6.471759] (-) TimerEvent: {}
+[6.576247] (-) TimerEvent: {}
+[6.678213] (-) TimerEvent: {}
+[6.782711] (-) TimerEvent: {}
+[6.884753] (-) TimerEvent: {}
+[6.989232] (-) TimerEvent: {}
+[6.999162] (pure_pursuit) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable pure_pursuit_node\x1b[0m\n'}
+[7.089387] (-) TimerEvent: {}
+[7.190878] (-) TimerEvent: {}
+[7.259880] (pure_pursuit) StdoutLine: {'line': b'[100%] Built target pure_pursuit_node\n'}
+[7.269823] (pure_pursuit) CommandEnded: {'returncode': 0}
+[7.291572] (pure_pursuit) JobProgress: {'identifier': 'pure_pursuit', 'progress': 'install'}
+[7.291623] (-) TimerEvent: {}
+[7.299246] (pure_pursuit) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/build/pure_pursuit'], 'cwd': '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/build/pure_pursuit', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sohum'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/sohum'), ('OLDPWD', '/home/sohum/Graph_SLAM_Pure_Pursuit'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1169'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'sohum'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sohum'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/opt/ros/iron/bin:/home/sohum/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sohum-QEMU-Virtual-Machine:@/tmp/.ICE-unix/1140,unix/sohum-QEMU-Virtual-Machine:/tmp/.ICE-unix/1140'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c6526165_8735_404c_a06a_a8c01bcbdcd5'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0IEDS2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.113'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/iron'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/build/pure_pursuit'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/iron')]), 'shell': False}
+[7.305110] (pure_pursuit) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.305573] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/lib/pure_pursuit/pure_pursuit_node\n'}
+[7.306144] (pure_pursuit) StdoutLine: {'line': b'-- Set runtime path of "/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/lib/pure_pursuit/pure_pursuit_node" to ""\n'}
+[7.306311] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/environment/pythonpath.sh\n'}
+[7.306425] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/environment/pythonpath.dsv\n'}
+[7.306640] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/lib/python3.10/site-packages/pure_pursuit-0.0.0-py3.10.egg-info\n'}
+[7.306735] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/lib/python3.10/site-packages/pure_pursuit-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[7.306925] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/lib/python3.10/site-packages/pure_pursuit-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[7.307059] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/lib/python3.10/site-packages/pure_pursuit-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[7.307189] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/lib/python3.10/site-packages/pure_pursuit-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[7.307251] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/lib/python3.10/site-packages/pure_pursuit\n'}
+[7.307305] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/lib/python3.10/site-packages/pure_pursuit/__init__.py\n'}
+[7.339942] (pure_pursuit) StdoutLine: {'line': b"Listing '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/lib/python3.10/site-packages/pure_pursuit'...\n"}
+[7.340115] (pure_pursuit) StdoutLine: {'line': b"Compiling '/home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/lib/python3.10/site-packages/pure_pursuit/__init__.py'...\n"}
+[7.344941] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/lib/pure_pursuit/pure_pursuit_node.py\n'}
+[7.345124] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/ament_index/resource_index/package_run_dependencies/pure_pursuit\n'}
+[7.345657] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/ament_index/resource_index/parent_prefix_path/pure_pursuit\n'}
+[7.345750] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/environment/ament_prefix_path.sh\n'}
+[7.345807] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/environment/ament_prefix_path.dsv\n'}
+[7.345852] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/environment/path.sh\n'}
+[7.345895] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/environment/path.dsv\n'}
+[7.346253] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/local_setup.bash\n'}
+[7.346362] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/local_setup.sh\n'}
+[7.346411] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/local_setup.zsh\n'}
+[7.346537] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/local_setup.dsv\n'}
+[7.346617] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/package.dsv\n'}
+[7.346667] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/ament_index/resource_index/packages/pure_pursuit\n'}
+[7.346825] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/cmake/pure_pursuitConfig.cmake\n'}
+[7.346873] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/cmake/pure_pursuitConfig-version.cmake\n'}
+[7.346916] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /home/sohum/Graph_SLAM_Pure_Pursuit/pure_pursuit/install/pure_pursuit/share/pure_pursuit/package.xml\n'}
+[7.349630] (pure_pursuit) CommandEnded: {'returncode': 0}
+[7.391734] (-) TimerEvent: {}
+[7.398873] (pure_pursuit) JobEnded: {'identifier': 'pure_pursuit', 'rc': 0}
+[7.399856] (-) EventReactorShutdown: {}

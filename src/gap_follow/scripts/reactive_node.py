@@ -61,6 +61,7 @@ class ReactiveFollowGap(Node):
                 max_gap_start = start
                 max_gap_end = end
 
+        self.get_logger().info(f'start: {max_gap_start}, end: {max_gap_end}')
         return max_gap_start, max_gap_end
 
     
@@ -68,7 +69,7 @@ class ReactiveFollowGap(Node):
     def find_best_point(self, start_i, end_i, ranges):
         """Start_i & end_i are start and end indicies of max-gap range, respectively
         Return index of best point in ranges
-	    Naive: Choose the furthest point within ranges and go there
+        Naive: Choose the furthest point within ranges and go there
         """
         best_point = start_i + ((end_i-start_i ) // 2.0)
         return best_point
@@ -85,16 +86,16 @@ class ReactiveFollowGap(Node):
 
         # Find the best point in the gap
         best_point = self.find_best_point(start_i, end_i, ranges)
-        self.get_logger().info(f'The best point is {best_point} far away')
+        # self.get_logger().info(f'The best point is {best_point} far away')
 
         # Publish Drive message
         drive_msg = AckermannDriveStamped()
         drive_msg.drive.steering_angle = (best_point - len(ranges) // 2.0) * data.angle_increment
 
-        if best_point < 550:
-            drive_msg.drive.speed = 5.5 # You can adjust the speed accordingly
-        else:
-            drive_msg.drive.speed = 2.5 # You can adjust the speed accordingly
+        # if best_point < 550:
+        #     drive_msg.drive.speed = 5.5 # You can adjust the speed accordingly
+        # else:
+        drive_msg.drive.speed = 2.5 # You can adjust the speed accordingly
 
         self.driver_pub.publish(drive_msg)
 
